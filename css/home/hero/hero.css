@@ -7,7 +7,6 @@
 /* Styles for the hero section container */
 .home__hero-section {
   min-height: 100vh;
-  background-color: var(--bg-light);
   position: relative;
   overflow: hidden;
 }
