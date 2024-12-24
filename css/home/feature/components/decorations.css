@@ -1,0 +1,25 @@
+/* Decorative Circle background element */
+.home__feature-section::before {
+  content: "";
+  position: absolute;
+  left: -10%;
+  bottom: -20%;
+  width: 60%;
+  height: 120%;
+  background-color: var(--secondary-pastel);
+  border-radius: 50%;
+  opacity: 0.1;
+  transform: rotate(15deg);
+}
+
+/* The horizontal line above the card */
+.feature__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--primary-pastel);
+  opacity: 0.5;
+}

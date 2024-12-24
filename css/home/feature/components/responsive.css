@@ -1,0 +1,15 @@
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home__feature-section {
+    padding: 4rem 0;
+  }
+
+  .feature__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .feature__card {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,24 @@
+/* Styles for the feature section call-to-action container */
+.feature__cta {
+  text-align: center;
+}
+
+/* Styles for the feature section call-to-action button */
+.feature__cta-button {
+  background-color: var(--primary-pastel);
+  color: white;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(180, 167, 214, 0.2);
+}
+
+/* Styles for the feature section call-to-action button on hover */
+.feature__cta-button:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(180, 167, 214, 0.3);
+}

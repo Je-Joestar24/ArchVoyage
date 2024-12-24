@@ -1,0 +1,32 @@
+/* Importing card component styles */
+@import "./components/card.css";
+/* Importing call-to-action component styles */
+@import "./components/cta.css";
+/* Importing responsive design adjustments */
+@import "./components/responsive.css";
+/* Importing title component styles */
+@import "./components/title.css";
+
+/* Styles for the feature section container */
+.home__feature-section {
+  padding: 6rem 0;
+  background-color: var(--bg-light);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styles for the feature section contents wrapper */
+.home__feature-section--contents {
+  max-width: var(--cont-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+/* Styles for the feature cards grid layout */
+.feature__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
