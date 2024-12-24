@@ -1,0 +1,31 @@
+/* Container for hero section text content */
+.home__hero-desc {
+  flex: 0 1 50%;
+  margin: auto;
+  text-align: left;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Styles for the hero section title */
+.home__hero-title {
+  font-size: var(--title-size);
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+/* Styles for the highlighted text within the hero section title */
+.home__hero-title span {
+  color: var(--primary-pastel);
+  position: relative;
+  display: inline-block;
+}
+
+/* Styles for the hero section description */
+.home__hero-description {
+  font-size: var(--desc-size);
+  color: var(--text-dark);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}

@@ -1,0 +1,19 @@
+/* Responsive adjustments */
+@media (max-width: 968px) {
+  .home__hero-section--contents {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+  }
+
+  .home__hero-desc {
+    flex: 0 1 auto;
+    text-align: center;
+  }
+
+  .home__hero-decoration {
+    flex: 0 1 auto;
+    height: 300px;
+    margin-top: 2rem;
+  }
+}

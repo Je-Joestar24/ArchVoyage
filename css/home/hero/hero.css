@@ -1,0 +1,25 @@
+@import "./components/animations.css"; /* Importing animations styles */
+@import "./components/cta.css"; /* Importing call-to-action styles */
+@import "./components/decor.css"; /* Importing decoration styles */
+@import "./components/responsive.css"; /* Importing responsive adjustments */
+@import "./components/title.css"; /* Importing title styles */
+
+/* Styles for the hero section container */
+.home__hero-section {
+  min-height: 100vh;
+  background-color: var(--bg-light);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styles for the hero section content container */
+.home__hero-section--contents {
+  max-width: var(--cont-width);
+  margin: 0 auto;
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}

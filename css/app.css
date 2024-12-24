@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=YourChosenFont:wght@400;700&display=swap"); /* Replace with your chosen font */
+@import "./home/home.css";
+/* Root variables, for the entire project themes */
+:root {
+  --primary-pastel: #B4A7D6; /* Soft purple */
+  --secondary-pastel: #A2C4C9; /* Soft blue */
+  --accent-pastel: #F4CCCC; /* Soft pink */
+  --text-dark: #4A4A4A; /* Soft black for text */
+  --bg-light: #F9F9F9; /* Off-white background */
+  --button-hover: #9B8BC1; /* Darker soft purple */
+  --decorative-element: #FFE5D4; /* Soft peach */
+  --cont-width: 1400px;
+  
+  /* Typography */
+  --title-size: clamp(2.5rem, 5vw, 4rem);
+  --desc-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+/* Basic Reset */
+* {
+  margin: 0px;
+  font-family: "Montserrat", "Roboto", "Open Sans", "Helvetica Neue", "Arial",
+    "Segoe UI", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  font-family: "Montserrat", "Roboto", "Open Sans", "Helvetica Neue", "Arial",
+    "Segoe UI", sans-serif;
+}
+
+a {
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+}
