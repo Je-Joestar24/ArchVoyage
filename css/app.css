@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=YourChosenFont:wght@400;700&display=swap"); /* Replace with your chosen font */
 @import "./home/home.css";
-@import "./home/";
+@import "./navitation/navitation.css";
 /* Root variables, for the entire project themes */
 :root {
   --primary-pastel: #b4a7d6; /* Soft purple */
@@ -10,7 +9,7 @@
   --bg-light: #f9f9f9; /* Off-white background */
   --button-hover: #9b8bc1; /* Darker soft purple */
   --decorative-element: #ffe5d4; /* Soft peach */
-  --cont-width: 1400px;
+  --cont-width: 1200px;
 
   /* Typography */
   --title-size: clamp(2.5rem, 5vw, 4rem);

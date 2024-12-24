@@ -1,0 +1,29 @@
+/* Navigation list container */
+.nav__contents {
+  max-width: var(--cont-width);
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Navigation link container */
+.nav__links {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Navigation links */
+.nav__link {
+  position: relative;
+  padding: 0.5rem 0;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+  color: var(--primary-pastel);
+}

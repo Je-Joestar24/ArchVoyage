@@ -1,0 +1,6 @@
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav__mobile-button {
+    display: block;
+  }
+}
