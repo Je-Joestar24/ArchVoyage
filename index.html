@@ -3,12 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arcoyage</title>
+    <title>ArcVoyage</title>
 
     <link rel="stylesheet" href="css/app.css" />
   </head>
   <body>
     <div id="app">
+      <nav class="nav">
+        <ul class="nav__contents">
+          <li class="nav__logo">
+            <a href="/" aria-label="ArcVoyage Home"> Arc<span>Voyage</span> </a>
+          </li>
+          <div class="nav__links">
+            <li>
+              <a href="/" class="nav__link active" aria-label="Home">Home</a>
+            </li>
+            <li>
+              <a href="/arcs" class="nav__link" aria-label="Arcs">Arcs</a>
+            </li>
+            <li>
+              <a href="/about" class="nav__link" aria-label="About">About</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
       <div class="home">
         <section class="home__hero-section">
           <main
