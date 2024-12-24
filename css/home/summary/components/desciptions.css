@@ -1,0 +1,48 @@
+/*
+  Styles for the summary header section.
+  This section is centered and has a maximum width of 800px.
+  It is used to contain the title and description of the summary.
+*/
+.summary__header {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 800px;
+}
+
+/*
+  Styles for the summary title.
+  The title is displayed inline-block with a relative position.
+  It has a bottom border line with a width of 80px and height of 4px.
+  The border line is centered and has a background color of var(--primary-pastel).
+*/
+.summary__title {
+  font-size: var(--title-size);
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.summary__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-pastel);
+  border-radius: 2px;
+}
+
+/*
+  Styles for the summary description.
+  The description has a font size of var(--desc-size), color of var(--text-dark),
+  line height of 1.8, and opacity of 0.9.
+*/
+.summary__description {
+  font-size: var(--desc-size);
+  color: var(--text-dark);
+  line-height: 1.8;
+  opacity: 0.9;
+}

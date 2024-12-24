@@ -1,0 +1,23 @@
+/* Importing necessary styles */
+@import "./components/decorations.css";
+@import "./components/cta.css";
+@import "./components/desciptions.css";
+@import "./components/responsive.css";
+
+/* Styles for the summary section */
+.home__summary-section {
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styles for the contents of the summary section */
+.home__summary-section--contents {
+  max-width: var(--cont-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

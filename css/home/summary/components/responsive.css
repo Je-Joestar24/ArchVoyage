@@ -1,0 +1,10 @@
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home__summary-section {
+    padding: 4rem 0;
+  }
+
+  .summary__decoration {
+    margin: 2rem 0;
+  }
+}
