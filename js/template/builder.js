@@ -1,7 +1,6 @@
 /**
  * Builder class responsible for constructing the main application layout
- * Creates the initial HTML structure including navigation, main content area,
- * footer, message display, and various modal components
+ * Creates the initial HTML structure including navigation, main content area and footer
  */
 export default class {
     constructor() {
@@ -14,7 +13,22 @@ export default class {
 
     getHtml() {
         return `
+            ${this.getNav()}
+            ${this.getDisplay()}
+            ${this.getFooter()}
         `;
+    }
+
+    getNav(){
+        return '<nav id="app__nav" class="nav"></nav>';
+    }
+
+    getDisplay(){
+        return '<div id="app__display" class="app__display"></div>';
+    }
+
+    getFooter(){
+        return '<footer id="footer" class="footer"></footer>';
     }
 
 }
