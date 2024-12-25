@@ -1,5 +1,6 @@
 @import "./home/home.css";
 @import "./navitation/navitation.css";
+@import "./footer/footer.css";
 /* Root variables, for the entire project themes */
 :root {
   --primary-pastel: #b4a7d6; /* Soft purple */

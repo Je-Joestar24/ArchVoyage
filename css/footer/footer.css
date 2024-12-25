@@ -1,0 +1,38 @@
+/* Importing components */
+@import "./components/links.css";
+@import "./components/social.css";
+@import "./components/copyright.css";
+@import "./components/responsive.css";
+@import "./components/navigations.css";
+@import "./components/description.css";
+
+/* Main footer container */
+.footer {
+  background-color: var(--bg-light);
+  padding: 4rem 0 2rem;
+  margin-top: 4rem;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(180, 167, 214, 0.1);
+}
+
+/* Footer content wrapper */
+.footer__contents {
+  max-width: var(--cont-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 4rem;
+  position: relative;
+}
+
+/* Acknowledgments section */
+.footer__acknowledgments {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  opacity: 0.7;
+  line-height: 1.6;
+  margin-top: 3rem;
+  grid-column: 1 / -1;
+}

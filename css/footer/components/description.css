@@ -1,0 +1,23 @@
+/* Description section */
+.footer__description {
+  max-width: 400px;
+}
+
+.footer__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.footer__logo span {
+  color: var(--primary-pastel);
+}
+
+.footer__text {
+  color: var(--text-dark);
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}

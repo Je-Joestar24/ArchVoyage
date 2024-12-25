@@ -1,0 +1,16 @@
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer__contents {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .footer__description {
+    max-width: 100%;
+  }
+
+  .footer__nav {
+    align-items: center;
+  }
+}
