@@ -1,7 +1,9 @@
 import { Router } from './util/router.js';
+import Main from './template/main.js';
 
 // Add event listener for data-link clicks
 document.addEventListener('DOMContentLoaded', async () => {
+    new Main();
     const router = new Router('#app__display');
 
     // Add event listeners for navigation and page reload
