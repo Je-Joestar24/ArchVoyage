@@ -7,7 +7,7 @@
     {
         "id": 2,
         "title": "Orange Town",
-        "img": "./image/orange_town.jpg"
+        "img": "./image/orange_town.png"
     },
     {
         "id": 3,
@@ -22,22 +22,22 @@
     {
         "id": 5,
         "title": "Arlong Park",
-        "img": "./image/arlong_park.jpg"
+        "img": "./image/arlong_park.png"
     },
     {
         "id": 6,
         "title": "Loguetown",
-        "img": "./image/loguetown.jpg"
+        "img": "./image/loguetown.png"
     },
     {
         "id": 7,
         "title": "Whisky Peak",
-        "img": "./image/whisky_peak.jpg"
+        "img": "./image/whisky_peak.png"
     },
     {
         "id": 8,
         "title": "Little Garden",
-        "img": "./image/little_garden.jpg"
+        "img": "./image/little_garden.png"
     },
     {
         "id": 9,
@@ -52,7 +52,7 @@
     {
         "id": 11,
         "title": "Jaya",
-        "img": "./image/jaya.jpg"
+        "img": "./image/jaya.png"
     },
     {
         "id": 12,
@@ -72,7 +72,7 @@
     {
         "id": 15,
         "title": "Post-Enies Lobby",
-        "img": "./image/post_enies_lobby.jpg"
+        "img": "./image/post_enies_lobby.png"
     },
     {
         "id": 16,
