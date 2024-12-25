@@ -1,0 +1,53 @@
+@import "./components/card.css";
+@import "./components/decorations.css";
+@import "./components/headers.css";
+@import "./components/responsive.css";
+
+
+/* Main container */
+.arcs {
+  min-height: 100vh;
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-light);
+}
+
+/* Content container */
+.arcs__contents {
+  max-width: var(--cont-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Grid container */
+.arcs__grid {
+  display: grid;
+  gap: 3rem;
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

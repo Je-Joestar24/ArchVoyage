@@ -1,0 +1,32 @@
+/* Header styles */
+.arcs__header {
+  text-align: center;
+  margin-bottom: 4rem;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.arcs__title {
+  font-size: var(--title-size);
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.arcs__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-pastel);
+  border-radius: 2px;
+}
+
+.arcs__subtitle {
+  font-size: var(--desc-size);
+  color: var(--text-dark);
+  opacity: 0.8;
+}

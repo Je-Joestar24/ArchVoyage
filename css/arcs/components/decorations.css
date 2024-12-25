@@ -1,0 +1,13 @@
+/* Decorative background elements */
+.arcs::before {
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: -20%;
+  width: 50%;
+  height: 100%;
+  background-color: var(--primary-pastel);
+  border-radius: 50%;
+  opacity: 0.05;
+  transform: rotate(-15deg);
+}
