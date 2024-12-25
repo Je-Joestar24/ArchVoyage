@@ -1,4 +1,5 @@
 @import "./home/home.css";
+@import "./about/about.css";
 @import "./navitation/navitation.css";
 @import "./footer/footer.css";
 /* Root variables, for the entire project themes */

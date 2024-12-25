@@ -1,0 +1,24 @@
+/* Description section */
+.about__description {
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+.about__paragraph {
+  font-size: var(--desc-size);
+  color: var(--text-dark);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* Highlight text */
+.about__highlight {
+  color: var(--primary-pastel);
+  font-weight: 600;
+}

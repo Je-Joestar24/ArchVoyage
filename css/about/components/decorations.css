@@ -1,0 +1,26 @@
+/* Decorative background elements */
+.about::before {
+  content: "";
+  position: absolute;
+  right: -20%;
+  top: -10%;
+  width: 60%;
+  height: 100%;
+  background-color: var(--primary-pastel);
+  border-radius: 50%;
+  opacity: 0.05;
+  transform: rotate(15deg);
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  left: -20%;
+  bottom: -20%;
+  width: 50%;
+  height: 80%;
+  background-color: var(--secondary-pastel);
+  border-radius: 50%;
+  opacity: 0.05;
+  transform: rotate(-15deg);
+}

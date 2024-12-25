@@ -1,0 +1,14 @@
+/* Responsive design */
+@media (max-width: 768px) {
+  .about {
+    padding: 6rem 0;
+  }
+
+  .about__contents {
+    padding: 0 1.5rem;
+  }
+
+  .about__paragraph {
+    font-size: calc(var(--desc-size) * 0.9);
+  }
+}
