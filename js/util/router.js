@@ -4,6 +4,7 @@
  * Manages navigation between different views without full page reloads.
  */
 import Home from '../views/home.js';
+import Arcs from '../views/arcs.js';
 
 export class Router {
 
@@ -12,6 +13,7 @@ export class Router {
         // Define available routes and their corresponding views
         this.routes = [
             { path: '#/', view: Home, id: 'home-nav', message: 'HOME PAGE' },
+            { path: '#/arcs', view: Arcs, id: 'arcs-nav', message: 'ARCS PAGE' },
         ];
 
         this.displayArea = document.querySelector(displayID);
