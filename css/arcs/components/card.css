@@ -1,0 +1,27 @@
+@import "./cardComponents/cta.css";
+@import "./cardComponents/img.css";
+@import "./cardComponents/texts.css";
+
+/* Arc Card styles */
+.arc-card {
+  min-height: 80vh;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(180, 167, 214, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.arc-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(180, 167, 214, 0.2);
+}
+
+.arc-card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+  height: 100%;
+  gap: 4rem;
+}

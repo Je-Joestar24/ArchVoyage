@@ -1,5 +1,6 @@
 @import "./home/home.css";
 @import "./about/about.css";
+@import "./arcs/arc.css";
 @import "./navitation/navitation.css";
 @import "./footer/footer.css";
 /* Root variables, for the entire project themes */
@@ -31,7 +32,7 @@
   font-optical-sizing: auto;
 }
 
-img{
+img {
   object-fit: cover;
 }
 

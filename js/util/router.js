@@ -5,6 +5,7 @@
  */
 import Home from '../views/home.js';
 import About from '../views/about.js';
+import Arcs from '../views/arcs.js';
 
 export class Router {
 
@@ -14,6 +15,7 @@ export class Router {
         this.routes = [
             { path: '#/', view: Home, id: 'home-nav', message: 'HOME PAGE' },
             { path: '#/about', view: About, id: 'about-nav', message: 'ABOUT PAGE' },
+            { path: '#/arcs', view: Arcs, id: 'arcs-nav', message: 'ARCS PAGE' },
         ];
 
         this.displayArea = document.querySelector(displayID);

@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "title": "Romance Dawn",
+        "img": "./image/romance_dawn.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Orange Town",
+        "img": "./image/orange_town.png"
+    },
+    {
+        "id": 3,
+        "title": "Syrup Village",
+        "img": "./image/syrup_village.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Baratie",
+        "img": "./image/baratie.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Arlong Park",
+        "img": "./image/arlong_park.png"
+    },
+    {
+        "id": 6,
+        "title": "Loguetown",
+        "img": "./image/loguetown.png"
+    },
+    {
+        "id": 7,
+        "title": "Whisky Peak",
+        "img": "./image/whisky_peak.png"
+    },
+    {
+        "id": 8,
+        "title": "Little Garden",
+        "img": "./image/little_garden.png"
+    },
+    {
+        "id": 9,
+        "title": "Drum Island",
+        "img": "./image/drum_island.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Alabasta",
+        "img": "./image/alabasta.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Jaya",
+        "img": "./image/jaya.png"
+    },
+    {
+        "id": 12,
+        "title": "Skypiea",
+        "img": "./image/skypiea.jpg"
+    },
+    {
+        "id": 13,
+        "title": "Water 7",
+        "img": "./image/water_7.jpg"
+    },
+    {
+        "id": 14,
+        "title": "Enies Lobby",
+        "img": "./image/enies_lobby.jpg"
+    },
+    {
+        "id": 15,
+        "title": "Post-Enies Lobby",
+        "img": "./image/post_enies_lobby.png"
+    },
+    {
+        "id": 16,
+        "title": "Thriller Bark",
+        "img": "./image/thriller_bark.jpg"
+    },
+    {
+        "id": 17,
+        "title": "Sabaody Archipelago",
+        "img": "./image/sabaody_archipelago.jpg"
+    },
+    {
+        "id": 18,
+        "title": "Amazon Lily",
+        "img": "./image/amazon_lily.png"
+    },
+    {
+        "id": 19,
+        "title": "Impel Down",
+        "img": "./image/impel_down.jpg"
+    },
+    {
+        "id": 20,
+        "title": "Marineford War",
+        "img": "./image/marineford.jpg"
+    }
+]
