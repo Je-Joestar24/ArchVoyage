@@ -12,17 +12,17 @@ export default class {
     feature = [
         {
             "title": "Marineford",
-            "image": "Marineford Arc Image",
+            "image": "./image/marineford.jpg",
             "description": "The ultimate war between the Marines and the pirates, featuring the most powerful characters in the series."
         },
         {
             "title": "Enies Lobby",
-            "image": "Enies Lobby Arc Image",
+            "image": "./image/enies_lobby.jpg",
             "description": "A rescue mission turns into an all-out war against the World Government to save a crew member."
         },
         {
-            "title": "Skypea",
-            "image": "Skypea Arc Image",
+            "title": "Skypiea",
+            "image": "./image/skypiea.jpg",
             "description": "An adventure in the sky island where the crew discovers ancient history and faces a self-proclaimed god."
         }
     ];
@@ -52,9 +52,9 @@ export default class {
               </div>
               ${await this.getFeature()}
               <div class="feature__cta">
-                <button class="feature__cta-button" aria-label="View All Arcs">
+                <a class="feature__cta-button" aria-label="View All Arcs" data-link href="#/arcs">
                   View All Arcs
-                </button>
+                </a>
               </div>
             </main>
           </section>
@@ -76,6 +76,7 @@ export default class {
                 <img
                     class="feature__card-image"
                     role="img"
+                    src="${info.image}"
                     alt="${info.title} Arc Image"
                     loading="lazy"
                 />

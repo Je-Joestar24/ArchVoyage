@@ -30,6 +30,10 @@
   font-optical-sizing: auto;
 }
 
+img{
+  object-fit: cover;
+}
+
 body {
   background-color: var(--bg-light);
   color: var(--text-dark);

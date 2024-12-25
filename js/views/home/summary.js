@@ -32,12 +32,14 @@ export default class {
             <ul class="summary__decoration-points"> ${ await this.getDecor() } </ul>
             </div>
             <div class="summary__cta">
-            <button
+            <a
                 class="summary__cta-button"
                 aria-label="Start Your Voyage"
+                href="#/arcs"
+                data-link
             >
                 Start Your Voyage
-            </button>
+            </a>
             </div>
         </main>
     </section>
