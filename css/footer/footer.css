@@ -1,6 +1,4 @@
 /* Importing components */
-@import "./components/links.css";
-@import "./components/social.css";
 @import "./components/copyright.css";
 @import "./components/responsive.css";
 @import "./components/navigations.css";
