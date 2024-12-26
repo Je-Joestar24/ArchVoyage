@@ -1,0 +1,21 @@
+/* Character tags */
+.arcs-modal__characters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.character-tag {
+  background-color: var(--decorative-element);
+  color: var(--text-dark);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.character-tag:hover {
+  background-color: var(--primary-pastel);
+  color: white;
+  transform: translateY(-2px);
+}

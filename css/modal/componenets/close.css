@@ -1,0 +1,18 @@
+/* Close button */
+.arcs-modal__close {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.arcs-modal__close:hover {
+  transform: rotate(90deg);
+}
+
+.arcs-modal__close svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--text-dark);
+}

@@ -1,11 +1,23 @@
-const state = {}; // Accessing the main application state
+const state = {
+    display: {
+        id: -1,
+        title: "",
+        img: ""
+    }
+}; // Accessing the main application state
 
 // Getters: Retrieve state data
-const getters = {};
+const getters = {
+    getDisplay: () => state.display
+}
 
 // Mutations: Synchronous functions to modify the state
-const mutations = {};
 
+const mutations = {
+    setDisplay: (config) => {
+        state.display = config;
+    }
+}
 // Actions: Asynchronous or complex operations
 const actions = {
     /**

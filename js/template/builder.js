@@ -17,6 +17,7 @@ export default class {
             ${this.getDisplay()}
             ${this.getFooter()}
             ${this.getMessage()}
+            ${this.getArcsModal()}
         `;
     }
 
@@ -35,5 +36,10 @@ export default class {
     getMessage(){
         return '<div id="app__message"></div>';
     }
-
+    
+    getArcsModal(){
+        return `
+            <div id="arcs-modal" class=""></div>
+        `;
+    }
 }
