@@ -1,0 +1,31 @@
+/* Sort button styles */
+.sort-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: white;
+  border: 2px solid rgba(180, 167, 214, 0.2);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  color: var(--text-dark);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.sort-button:hover {
+  background-color: var(--primary-pastel);
+  color: white;
+  border-color: var(--primary-pastel);
+}
+
+.sort-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.sort-button[data-order="desc"] .sort-icon {
+  transform: rotate(180deg);
+}

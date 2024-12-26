@@ -2,7 +2,7 @@
 @import "./components/decorations.css";
 @import "./components/headers.css";
 @import "./components/responsive.css";
-
+@import "./components/sortsearch.css";
 
 /* Main container */
 .arcs {

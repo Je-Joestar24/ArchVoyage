@@ -1,0 +1,25 @@
+@import "sortsearchComponents/responsive.css";
+@import "sortsearchComponents/search.css";
+@import "sortsearchComponents/sort.css";
+
+/* Filter container */
+.arcs__filters {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 1rem;
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+/* No results message */
+.no-results {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-dark);
+  opacity: 0.7;
+  font-size: 1.1rem;
+}
