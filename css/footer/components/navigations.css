@@ -11,3 +11,36 @@
   margin-bottom: 1rem;
   font-weight: 600;
 }
+
+/* Navigation links */
+.footer__nav-link {
+  color: var(--text-dark);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.3rem 0;
+  width: fit-content;
+}
+
+/* Hover effect with sliding underline */
+.footer__nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--primary-pastel);
+  transition: width 0.3s ease;
+}
+
+/* Hover states */
+.footer__nav-link:hover {
+  opacity: 1;
+  color: var(--primary-pastel);
+  transform: translateX(5px);
+}
+
+.footer__nav-link:hover::after {
+  width: 100%;
+}
