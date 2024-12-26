@@ -1,4 +1,3 @@
-
 const state = {}; // Accessing the main application state
 
 // Getters: Retrieve state data
@@ -24,7 +23,23 @@ const actions = {
         });
         const found = nav.querySelector(`#${active_id}`);
         if (found) found.classList.add(active_class);
-    }, 
+    },
+    /**
+     * Displays a message on the application page.
+     * This function updates the message display area with the provided message
+     * and fades it out after a specified duration.
+     * 
+     * @param {string} message - The message to display.
+     * @param {number} custom - The duration in milliseconds before the message fades out (default is 10).
+     */
+    displayMessage(message, custom = 10) {
+        const message_display = document.querySelector('#app__message');
+        message_display.classList.remove('fade-out');
+        message_display.innerHTML = message;
+        setTimeout(() => {
+            message_display.classList.add('fade-out');
+        }, custom);
+    },
 }; // Corrected the typo from 'funciton' to 'functions'
 
 export { state, getters, mutations, actions }; // Exporting state management functions

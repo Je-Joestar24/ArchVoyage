@@ -16,6 +16,7 @@ export default class {
             ${this.getNav()}
             ${this.getDisplay()}
             ${this.getFooter()}
+            ${this.getMessage()}
         `;
     }
 
@@ -29,6 +30,10 @@ export default class {
 
     getFooter(){
         return '<footer id="footer" class="footer"></footer>';
+    }
+
+    getMessage(){
+        return '<div id="app__message"></div>';
     }
 
 }

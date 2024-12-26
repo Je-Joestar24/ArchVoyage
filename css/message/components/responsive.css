@@ -1,0 +1,7 @@
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #app__message {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.8rem;
+  }
+}

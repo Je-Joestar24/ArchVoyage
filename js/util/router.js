@@ -69,6 +69,7 @@ export class Router {
         // Initialize view instance and render its HTML content
         const view = new match.route.view();
         actions.setActiveNavigation(match.id, 'active');
+        actions.displayMessage(match.route.message, 500);
 
         this.displayArea.innerHTML = await view.getHtml();
         if (view.bindAll) await view.bindAll();
