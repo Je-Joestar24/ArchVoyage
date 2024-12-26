@@ -31,7 +31,7 @@ export default class {
                     Discover every arc, every adventure, and every moment that
                     makes this story legendary.
                 </p>
-                <a class="home__hero-button" aria-label="Explore the Arcs" data-link href="#/arc">
+                <a class="home__hero-button" aria-label="Explore the Arcs" data-link href="#/arcs">
                     Explore the Arcs
                 </a>
                 </div>

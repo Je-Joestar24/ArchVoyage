@@ -50,7 +50,13 @@ export default class extends AbstractView {
         </div>    
         `;
     }
-
+    /**
+     * Generates the HTML content for the filters section of the arcs page.
+     * This method returns a string of HTML code that represents the filters section.
+     * The filters section includes a search box and a sort toggle button.
+     * 
+     * @returns {string} The HTML content for the filters section.
+     */
     async getFilters(){
         return `
             <div class="arcs__filters">
@@ -114,12 +120,16 @@ export default class extends AbstractView {
                             Learn More
                         </button>
                     </div>
-                    <img class="arc-card__image" role="img" src="${elem.img}" alt="${elem.title} Arc Image"/>
+                    <img class="arc-card__image" role="img" src="${elem.img}" alt="${elem.title} Arc Image" loading="lazy"/>
                 </div>
             </article>
         `).join("");
     }
 
+    /**
+     * Binds event listeners to the search input and sort toggle button.
+     * This method is responsible for dynamically updating the arc cards based on user input.
+     */
     async bindAll() {
         // Add event listeners after the content is rendered
         const searchInput = document.getElementById('arcSearch');

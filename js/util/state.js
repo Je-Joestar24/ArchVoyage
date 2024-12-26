@@ -1,3 +1,12 @@
+/**
+ * The main application state object.
+ * This object holds the current state of the application, specifically the display properties.
+ * 
+ * @property {Object} display - The display properties of the application state.
+ * @property {number} display.id - The ID of the currently displayed item.
+ * @property {string} display.title - The title of the currently displayed item.
+ * @property {string} display.img - The image URL of the currently displayed item.
+ */
 const state = {
     display: {
         id: -1,
@@ -6,14 +15,34 @@ const state = {
     }
 }; // Accessing the main application state
 
-// Getters: Retrieve state data
+/**
+ * Getters: Retrieve state data
+ * This object contains functions that allow access to the state data without directly modifying it.
+ * 
+ * @property {Function} getDisplay - Returns the current display state.
+ */
 const getters = {
+    /**
+     * Returns the current display state.
+     * 
+     * @returns {Object} The current display state.
+     */
     getDisplay: () => state.display
 }
 
-// Mutations: Synchronous functions to modify the state
-
+/**
+ * Mutations: Synchronous functions to modify the state
+ * This object contains functions that directly modify the state.
+ * 
+ * @property {Function} setDisplay - Sets the display state to a new configuration.
+ */
 const mutations = {
+    /**
+     * Sets the display state to a new configuration.
+     * This function updates the state.display object with the provided configuration.
+     * 
+     * @param {Object} config - The new configuration for the display state.
+     */
     setDisplay: (config) => {
         state.display = config;
     }

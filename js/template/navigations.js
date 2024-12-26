@@ -1,11 +1,22 @@
-
 import AbstractTemplate from "./AbstractTemplate.js";
 
+/**
+ * NavigationTemplate class extends AbstractTemplate to render the navigation bar content.
+ * It defines the navigation links and generates the HTML content for the navigation bar.
+ */
 export default class extends AbstractTemplate {
+  /**
+   * Constructor for NavigationTemplate.
+   * Calls the superclass constructor to initialize the template.
+   */
   constructor() {
     super();
   }
 
+  /**
+   * Array of navigation links.
+   * Each link object contains the href, id, and textContent for the navigation item.
+   */
   navlinks = [
     {
       href: "#/",
@@ -24,6 +35,10 @@ export default class extends AbstractTemplate {
     },
   ];
 
+  /**
+   * Asynchronously generates the HTML content for the navigation bar.
+   * @returns {Promise<string>} A promise that resolves to the HTML content as a string.
+   */
   async getHtml() {
     return `
         <ul class="nav__contents">
@@ -38,6 +53,4 @@ export default class extends AbstractTemplate {
           </div>
       `;
   }
-
-
 }
