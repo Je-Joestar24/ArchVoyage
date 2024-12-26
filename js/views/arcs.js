@@ -21,6 +21,8 @@ export default class extends AbstractView {
          * Setting the title of the page to "ArcVoyage | Arcs".
          */
         this.setTitle("ArcVoyage | Arcs");
+        this.searchTerm = '';
+        this.sortOrder = 'asc';
     }
 
     /**
@@ -38,14 +40,42 @@ export default class extends AbstractView {
                 <header class="arcs__header">
                     <h1 class="arcs__title">Arcs Guide</h1>
                     <p class="arcs__subtitle">Explore the epic journey through One Piece's most memorable arcs</p>
+                    ${await this.getFilters()}
                 </header>
 
                 <div class="arcs__grid">
-                    <!-- Sample Arc Card -->
                     ${await this.getArcs()}
                 </div>
             </div>
         </div>    
+        `;
+    }
+
+    async getFilters(){
+        return `
+            <div class="arcs__filters">
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        id="arcSearch" 
+                        placeholder="Search arcs..." 
+                        class="search-input"
+                        aria-label="Search arcs"
+                    >
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                
+                <div class="sort-box">
+                    <button id="sortToggle" class="sort-button" aria-label="Toggle sort order">
+                        <span>Sort</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
         `;
     }
 
@@ -57,15 +87,27 @@ export default class extends AbstractView {
      * @returns {string} The HTML content for the arc cards.
      */
     async getArcs() {
-        return (this.data.map(elem => `
+        const filteredArcs = this.dataG.filterAndSortArcs(
+            this.data,
+            this.searchTerm,
+            this.sortOrder
+        );
+
+        if (!filteredArcs) {
+            return `
+                <div class="no-results">
+                    No arcs found matching "${this.searchTerm}"
+                </div>
+            `;
+        }
+
+        return filteredArcs.map(elem => `
             <article class="arc-card" aria-label="${elem.title} Arc">
                 <div class="arc-card__content">
                     <div class="arc-card__text">
                         <h2 class="arc-card__title">${elem.title}</h2>
                         <p class="arc-card__description">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa doloremque magnam adipisci inventore alias velit quis, et doloribus nostrum quas quod accusamus ad nisi id maxime totam repellendus necessitatibus sit! 
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa doloremque magnam adipisci inventore alias velit quis, et doloribus nostrum quas quod accusamus ad nisi id maxime totam repellendus necessitatibus sit!
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa doloremque magnam adipisci 
+                            ${elem.description || 'No description available.'}
                         </p>
                         <button class="arc-card__button" aria-label="Learn more about ${elem.title} Arc">
                             Learn More
@@ -74,6 +116,25 @@ export default class extends AbstractView {
                     <img class="arc-card__image" role="img" src="${elem.img}" alt="${elem.title} Arc Image"/>
                 </div>
             </article>
-        `).join(""));
+        `).join("");
+    }
+
+    async bindAll() {
+        // Add event listeners after the content is rendered
+        const searchInput = document.getElementById('arcSearch');
+        const sortButton = document.getElementById('sortToggle');
+
+        searchInput?.addEventListener('input', async (e) => {
+            this.searchTerm = e.target.value;
+            const arcsGrid = document.querySelector('.arcs__grid');
+            arcsGrid.innerHTML = await this.getArcs();
+        });
+
+        sortButton?.addEventListener('click', async () => {
+            this.sortOrder = this.sortOrder === 'asc' ? 'desc' : 'asc';
+            sortButton.innerHTML = `Sort ${this.sortOrder === 'asc' ? '↑' : '↓'}`;
+            const arcsGrid = document.querySelector('.arcs__grid');
+            arcsGrid.innerHTML = await this.getArcs();
+        });
     }
 }
