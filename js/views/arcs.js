@@ -107,7 +107,8 @@ export default class extends AbstractView {
                     <div class="arc-card__text">
                         <h2 class="arc-card__title">${elem.title}</h2>
                         <p class="arc-card__description">
-                            ${elem.description || 'No description available.'}
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa doloremque magnam adipisci inventore alias velit quis, et doloribus nostrum quas quod accusamus ad nisi id maxime totam repellendus necessitatibus sit! 
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa doloremque magnam adipisci inventore alias velit quis, et doloribus nostrum quas quod accusamus ad nisi id maxime totam repellendus necessitatibus sit!
                         </p>
                         <button class="arc-card__button" aria-label="Learn more about ${elem.title} Arc" data-arcs-toggle="${elem.id},${elem.img},${elem.title}">
                             Learn More
