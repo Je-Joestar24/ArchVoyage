@@ -1,0 +1,15 @@
+/* Modal header */
+.arcs-modal__header {
+  padding: 2rem;
+  border-bottom: 1px solid rgba(180, 167, 214, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.arcs-modal__title {
+  font-size: 2rem;
+  color: var(--text-dark);
+  margin: 0;
+}

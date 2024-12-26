@@ -1,0 +1,52 @@
+@import "./componenets/body.css";
+@import "./componenets/characters.css";
+@import "./componenets/close.css";
+@import "./componenets/events.css";
+@import "./componenets/header.css";
+@import "./componenets/img.css";
+@import "./componenets/info.css";
+@import "./componenets/maincontent.css";
+@import "./componenets/responsive.css";
+@import "./componenets/sidebar.css";
+
+/* Modal overlay */
+#arcs-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+#arcs-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Modal content */
+.arcs-modal__content {
+  background: var(--bg-light);
+  width: 95%;
+  max-width: 1200px;
+  max-height: 90vh;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+#arcs-modal.open .arcs-modal__content {
+  transform: translateY(0);
+  opacity: 1;
+}

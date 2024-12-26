@@ -1,0 +1,32 @@
+/* Main content area */
+.arcs-modal__main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.arcs-modal__section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(180, 167, 214, 0.1);
+}
+
+.arcs-modal__section h3 {
+  color: var(--text-dark);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.arcs-modal__section h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-pastel);
+  border-radius: 2px;
+}

@@ -1,0 +1,12 @@
+/* Modal body layout */
+.arcs-modal__body {
+  padding: 2rem;
+  overflow-y: auto;
+  max-height: calc(90vh - 190px);
+}
+
+.arcs-modal__layout {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 2rem;
+}

@@ -1,0 +1,37 @@
+/* Responsive design */
+@media (max-width: 1024px) {
+  .arcs-modal__layout {
+    grid-template-columns: 1fr;
+    overflow: auto;
+  }
+
+  .arcs-modal__sidebar {
+    position: relative;
+  }
+
+  .arcs-modal__image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .arcs-modal__content {
+    width: 95%;
+  }
+
+  .arcs-modal__header {
+    padding: 1.5rem;
+  }
+
+  .arcs-modal__title {
+    font-size: 1.5rem;
+  }
+
+  .arcs-modal__body {
+    padding: 1.5rem;
+  }
+
+  .arcs-modal__section {
+    padding: 1.5rem;
+  }
+}
