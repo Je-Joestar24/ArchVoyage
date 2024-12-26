@@ -16,6 +16,7 @@ export default class {
             ${this.getNav()}
             ${this.getDisplay()}
             ${this.getFooter()}
+            ${this.getArcsModal()}
         `;
     }
 
@@ -29,6 +30,12 @@ export default class {
 
     getFooter(){
         return '<footer id="footer" class="footer"></footer>';
+    }
+
+    getArcsModal(){
+        return `
+            <div id="arcs-modal" class=""></div>
+        `;
     }
 
 }

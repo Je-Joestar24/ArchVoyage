@@ -67,7 +67,7 @@ export default class extends AbstractView {
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa doloremque magnam adipisci inventore alias velit quis, et doloribus nostrum quas quod accusamus ad nisi id maxime totam repellendus necessitatibus sit!
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa doloremque magnam adipisci 
                         </p>
-                        <button class="arc-card__button" aria-label="Learn more about ${elem.title} Arc">
+                        <button class="arc-card__button" aria-label="Learn more about ${elem.title} Arc" data-arcs-toggle="${elem.id},${elem.img},${elem.title}">
                             Learn More
                         </button>
                     </div>
