@@ -1,0 +1,16 @@
+/* Image container */
+.arcs-modal__image {
+  width: 100%;
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  background-color: var(--decorative-element);
+  box-shadow: 0 4px 20px rgba(180, 167, 214, 0.2);
+}
+
+.arcs-modal__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

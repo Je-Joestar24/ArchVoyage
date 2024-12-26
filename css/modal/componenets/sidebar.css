@@ -1,0 +1,5 @@
+/* Sidebar styles */
+.arcs-modal__sidebar {
+  position: sticky;
+  top: 0;
+}

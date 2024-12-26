@@ -1,0 +1,34 @@
+/* Fade out class */
+#app__message.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  animation: slideDown forwards;
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* Add a subtle highlight effect */
+#app__message::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--primary-pastel),
+    transparent
+  );
+}

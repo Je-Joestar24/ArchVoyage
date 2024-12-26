@@ -6,19 +6,20 @@ export default class extends AbstractTemplate {
     super();
   }
 
-  active = "Home"
-
   navlinks = [
     {
       href: "#/",
+      id: "home-nav",
       textContent: "Home",
     },
     {
       href: "#/arcs",
+      id: "arcs-nav",
       textContent: "Arcs",
     },
     {
       href: "#/about",
+      id: "about-nav",
       textContent: "About",
     },
   ];
@@ -30,8 +31,8 @@ export default class extends AbstractTemplate {
             <a href="#/" aria-label="ArcVoyage Home"> Arc<span>Voyage</span> </a>
           </li>
           <div class="nav__links">
-            ${ this.navlinks.map(lnk => `<li>
-              <a href="${lnk.href}" class="nav__link ${lnk.textContent == this.active ? "active" : ""}" aria-label="${lnk.textContent}" data-link
+            ${this.navlinks.map(lnk => `<li>
+              <a id="${lnk.id}" href="${lnk.href}" class="nav__link" aria-label="${lnk.textContent}" data-link
                 >${lnk.textContent}</a>
             </li>`).join("")}
           </div>

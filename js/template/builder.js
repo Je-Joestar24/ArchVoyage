@@ -16,6 +16,8 @@ export default class {
             ${this.getNav()}
             ${this.getDisplay()}
             ${this.getFooter()}
+            ${this.getMessage()}
+            ${this.getArcsModal()}
         `;
     }
 
@@ -31,4 +33,13 @@ export default class {
         return '<footer id="footer" class="footer"></footer>';
     }
 
+    getMessage(){
+        return '<div id="app__message"></div>';
+    }
+    
+    getArcsModal(){
+        return `
+            <div id="arcs-modal" class=""></div>
+        `;
+    }
 }

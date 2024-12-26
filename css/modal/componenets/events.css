@@ -1,0 +1,25 @@
+/* Events list */
+.arcs-modal__events {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.arcs-modal__events li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.arcs-modal__events li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-pastel);
+  border-radius: 50%;
+}

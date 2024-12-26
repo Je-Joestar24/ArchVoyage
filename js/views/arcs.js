@@ -109,7 +109,7 @@ export default class extends AbstractView {
                         <p class="arc-card__description">
                             ${elem.description || 'No description available.'}
                         </p>
-                        <button class="arc-card__button" aria-label="Learn more about ${elem.title} Arc">
+                        <button class="arc-card__button" aria-label="Learn more about ${elem.title} Arc" data-arcs-toggle="${elem.id},${elem.img},${elem.title}">
                             Learn More
                         </button>
                     </div>

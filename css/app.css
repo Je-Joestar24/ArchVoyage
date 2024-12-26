@@ -3,6 +3,9 @@
 @import "./arcs/arc.css";
 @import "./navitation/navitation.css";
 @import "./footer/footer.css";
+@import "./message/message.css";
+@import "./modal/arcsmodal.css";
+
 /* Root variables, for the entire project themes */
 :root {
   --primary-pastel: #b4a7d6; /* Soft purple */
@@ -47,4 +50,8 @@ a {
   color: inherit;
   font: inherit;
   text-decoration: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }

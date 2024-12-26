@@ -6,6 +6,7 @@
 import Home from '../views/home.js';
 import About from '../views/about.js';
 import Arcs from '../views/arcs.js';
+import { actions } from './state.js';
 
 export class Router {
 
@@ -67,7 +68,9 @@ export class Router {
 
         // Initialize view instance and render its HTML content
         const view = new match.route.view();
-        
+        actions.setActiveNavigation(match.id, 'active');
+        actions.displayMessage(match.route.message, 500);
+
         this.displayArea.innerHTML = await view.getHtml();
         if (view.bindAll) await view.bindAll();
 
