@@ -1,9 +1,9 @@
-@import "components/close.css";
-@import "components/header.css";
-@import "components/signup.css";
-@import "components/input.css";
-@import "components/footer.css";
-@import "components/responsive.css";
+@import "signupComponents/close.css";
+@import "signupComponents/header.css";
+@import "signupComponents/signup.css";
+@import "signupComponents/input.css";
+@import "signupComponents/footer.css";
+@import "signupComponents/responsive.css";
 
 /* Signup Modal Styles */
 .signup-modal {
