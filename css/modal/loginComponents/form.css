@@ -1,0 +1,6 @@
+/* Modal Form Styles */
+.login-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}

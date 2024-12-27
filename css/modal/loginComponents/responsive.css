@@ -1,0 +1,37 @@
+/* Animation for Form Elements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation Delay for Input Groups */
+.login-modal__input-group {
+  animation: fadeInUp 0.3s ease-out forwards;
+  opacity: 0;
+}
+
+.login-modal__input-group:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.login-modal__input-group:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 480px) {
+  .login-modal__contents {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .login-modal__title {
+    font-size: 1.25rem;
+  }
+}

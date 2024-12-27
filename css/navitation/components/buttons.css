@@ -15,13 +15,13 @@
 }
 
 .btn--login {
-  color: var(--color-text-primary);
+  color: var(--text-dark);
   background: transparent;
   border: 2px solid transparent;
 }
 
 .btn--login:hover {
-  color: var(--color-primary);
+  color: var(--primary-pastel);
 }
 
 .btn--login::after {
@@ -31,7 +31,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--color-primary);
+  background-color: var(--primary-pastel);
   transition: width 0.3s ease-in-out;
 }
 
@@ -41,8 +41,8 @@
 
 .btn--signup {
   color: var(--color-white);
-  background: var(--color-primary);
-  border: 2px solid var(--color-primary);
+  background: var(--primary-pastel);
+  border: 2px solid var(--primary-pastel);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -50,12 +50,12 @@
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   background: transparent;
-  color: var(--color-primary);
+  color: var(--primary-pastel);
 }
 
 /* Accessibility focus states */
 .btn:focus-visible {
-  outline: 3px solid var(--color-primary);
+  outline: 3px solid var(--primary-pastel);
   outline-offset: 2px;
 }
 

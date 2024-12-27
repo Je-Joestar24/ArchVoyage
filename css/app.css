@@ -5,6 +5,7 @@
 @import "./footer/footer.css";
 @import "./message/message.css";
 @import "./modal/arcsmodal.css";
+@import "./modal/loginmodal.css";
 @import "./signupModal/modal.css";
 
 /* Root variables, for the entire project themes */

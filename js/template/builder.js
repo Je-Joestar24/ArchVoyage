@@ -29,6 +29,7 @@ export default class {
             ${this.getFooter()}
             ${this.getMessage()}
             ${this.getArcsModal()}
+            ${this.getLoginModal()}
             ${this.getSignupModal()}
         `;
     }
@@ -37,7 +38,7 @@ export default class {
      * Generates the HTML content for the navigation section.
      * @returns {string} The HTML content for the navigation section.
      */
-    getNav(){
+    getNav() {
         return '<nav id="app__nav" class="nav"></nav>';
     }
 
@@ -45,7 +46,7 @@ export default class {
      * Generates the HTML content for the main content area.
      * @returns {string} The HTML content for the main content area.
      */
-    getDisplay(){
+    getDisplay() {
         return '<div id="app__display" class="app__display"></div>';
     }
 
@@ -53,7 +54,7 @@ export default class {
      * Generates the HTML content for the footer section.
      * @returns {string} The HTML content for the footer section.
      */
-    getFooter(){
+    getFooter() {
         return '<footer id="footer" class="footer"></footer>';
     }
 
@@ -61,26 +62,34 @@ export default class {
      * Generates the HTML content for the message section.
      * @returns {string} The HTML content for the message section.
      */
-    getMessage(){
+    getMessage() {
         return '<div id="app__message"></div>';
     }
-    
+
     /**
      * Generates the HTML content for the Arcs modal.
      * @returns {string} The HTML content for the Arcs modal.
      */
-    getArcsModal(){
+    getArcsModal() {
         return `
             <div id="arcs-modal" class=""></div>
         `;
     }
 
-    
+    /**
+     * Generates the HTML content for the Login modal.
+     * @returns {string} The HTML content for the Login modal.
+     */
+    getLoginModal() {
+        return `
+            <div id="login-modal" class="login-modal" data-auths-login></div>`;
+    }
+
     /**
      * Generates the HTML content for the Arcs modal.
      * @returns {string} The HTML content for the Arcs modal.
      */
-    getSignupModal(){
+    getSignupModal() {
         return `
             <div id="signup-modal" class="signup-modal"></div>
         `;
