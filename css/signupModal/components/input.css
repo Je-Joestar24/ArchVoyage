@@ -1,0 +1,32 @@
+/* Signup Modal Input Group */
+.signup-modal__input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  animation: fadeInUp 0.3s ease-out forwards;
+  opacity: 0;
+}
+
+/* Signup Modal Label */
+.signup-modal__label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+/* Signup Modal Input */
+.signup-modal__input {
+  padding: 0.875rem 1rem;
+  border: 2px solid var(--secondary-pastel);
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+}
+
+/* Focus state for Signup Modal Input */
+.signup-modal__input:focus {
+  outline: none;
+  border-color: var(--primary-pastel);
+  box-shadow: 0 0 0 3px rgba(180, 167, 214, 0.2);
+}

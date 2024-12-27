@@ -6,6 +6,7 @@ import Footer from "./footer.js"; // Footer component for the application footer
 import Navigations from "./navigations.js"; // Navigations component for the application navigation
 import ArcsModal from "./arcsModal.js"; // ArcsModal component for modal functionality
 import LoginModal from "./loginModal.js";
+import SignupModal from "./signupModal.js";
 
 /**
  * MainTemplate class extends AbstractTemplate to define the main structure and functionality of the application.
@@ -36,5 +37,6 @@ export default class extends AbstractTemplate {
         // Initialize the ArcsModal component
         const am = new ArcsModal();
         const login = new LoginModal();
+        const signup = new SignupModal();
     }
 }

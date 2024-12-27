@@ -1,0 +1,19 @@
+/* Signup Modal Submit Button */
+.signup-modal__submit {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--primary-pastel);
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover state for Signup Modal Submit Button */
+.signup-modal__submit:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-2px);
+}
