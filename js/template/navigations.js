@@ -51,6 +51,15 @@ export default class extends AbstractTemplate {
                 >${lnk.textContent}</a>
             </li>`).join("")}
           </div>
+          <div class="nav__auth">
+            <button class="btn btn--login" aria-label="Login to your account" data-auths-login>
+              Login
+            </button>
+            <button class="btn btn--signup" aria-label="Create new account" data-auths-signup>
+              Sign Up
+            </button>
+          </div>
+        </ul>
       `;
   }
 }

@@ -2,6 +2,7 @@
 @import "./components/navlinks.css";
 @import "./components/decorations.css";
 @import "./components/responsive.css";
+@import "./components/buttons.css";
 
 /* Navigation container */
 .nav {
