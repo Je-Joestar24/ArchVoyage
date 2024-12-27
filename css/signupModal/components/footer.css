@@ -1,0 +1,19 @@
+/* Signup Modal Footer */
+.signup-modal__footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+/* Signup Modal Link */
+.signup-modal__link {
+  color: var(--primary-pastel);
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Hover state for Signup Modal Link */
+.signup-modal__link:hover {
+  color: var(--button-hover);
+}
