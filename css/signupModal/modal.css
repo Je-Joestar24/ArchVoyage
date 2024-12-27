@@ -1,0 +1,67 @@
+@import "components/close.css";
+@import "components/header.css";
+@import "components/signup.css";
+@import "components/input.css";
+@import "components/footer.css";
+@import "components/responsive.css";
+
+/* Signup Modal Styles */
+.signup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(74, 74, 74, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/* Open state for Signup Modal */
+.signup-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Signup Modal Contents */
+.signup-modal__contents {
+  background-color: var(--bg-light);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 10px 25px rgba(74, 74, 74, 0.1);
+  border: 2px solid var(--primary-pastel);
+}
+
+/* Open state for Signup Modal Contents */
+.signup-modal.open .signup-modal__contents {
+  transform: translateY(0);
+}
+
+/* Signup Modal Form */
+.signup-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Fade in animation for form fields */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

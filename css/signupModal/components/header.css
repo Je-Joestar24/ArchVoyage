@@ -1,0 +1,14 @@
+/* Signup Modal Header */
+.signup-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Signup Modal Title */
+.signup-modal__title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}

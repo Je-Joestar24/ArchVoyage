@@ -1,0 +1,15 @@
+/* Responsive design */
+@media (max-width: 480px) {
+  .signup-modal__contents {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .signup-modal__title {
+    font-size: 1.5rem;
+  }
+
+  .signup-modal__input {
+    padding: 0.75rem;
+  }
+}

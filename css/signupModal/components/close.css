@@ -1,0 +1,48 @@
+/* Signup Modal Close Button */
+.signup-modal__close {
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Signup Modal Close Button Icon */
+.signup-modal__close-icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+/* Signup Modal Close Button Icon Before and After Pseudo Elements */
+.signup-modal__close-icon::before,
+.signup-modal__close-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-dark);
+  top: 50%;
+  left: 0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Signup Modal Close Button Icon Before Pseudo Element */
+.signup-modal__close-icon::before {
+  transform: rotate(45deg);
+}
+
+/* Signup Modal Close Button Icon After Pseudo Element */
+.signup-modal__close-icon::after {
+  transform: rotate(-45deg);
+}
+
+/* Hover state for Signup Modal Close Button Icon Before and After Pseudo Elements */
+.signup-modal__close:hover .signup-modal__close-icon::before,
+.signup-modal__close:hover .signup-modal__close-icon::after {
+  background-color: var(--primary-pastel);
+}
