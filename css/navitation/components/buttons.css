@@ -1,0 +1,71 @@
+.nav__auth {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn {
+  position: relative;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn--login {
+  color: var(--color-text-primary);
+  background: transparent;
+  border: 2px solid transparent;
+}
+
+.btn--login:hover {
+  color: var(--color-primary);
+}
+
+.btn--login::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease-in-out;
+}
+
+.btn--login:hover::after {
+  width: 100%;
+}
+
+.btn--signup {
+  color: var(--color-white);
+  background: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn--signup:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  background: transparent;
+  color: var(--color-primary);
+}
+
+/* Accessibility focus states */
+.btn:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Active state animation */
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Disabled state */
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
