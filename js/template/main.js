@@ -1,9 +1,9 @@
 import Builder from "./builder.js"; // Import Builder class for building the application structure
-import AbstractTemplate from "./AbstractTemplate.js"; // Import AbstractTemplate class for template inheritance
+import AbstractTemplate from "./templates/AbstractTemplate.js"; // Import AbstractTemplate class for template inheritance
 
 // Importing components for the application
-import Footer from "./footer.js"; // Footer component for the application footer
-import Navigations from "./navigations.js"; // Navigations component for the application navigation
+import Footer from "./templates/footer.js"; // Footer component for the application footer
+import Navigations from "./templates/navigations.js"; // Navigations component for the application navigation
 import ArcsModal from "./modal/arcsModal.js"; // ArcsModal component for modal functionality
 import LoginModal from "./modal/loginModal.js";
 import SignupModal from "./modal/signupModal.js";
