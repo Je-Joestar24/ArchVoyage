@@ -9,6 +9,9 @@ ArcVoyage is an interactive web application that serves as a guide to the One Pi
 ### Home Page
 ![Home Page Screenshot](screenshots/home.png)
 
+### Featured Arcs
+![Home Page Screenshot](screenshots/feature.png)
+
 ### Arcs Page
 ![Arcs Page Screenshot](screenshots/arcs.png)
 
