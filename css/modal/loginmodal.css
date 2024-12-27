@@ -1,0 +1,226 @@
+/* Modal Container Styles */
+.login-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/* Modal Container Styles when Open */
+.login-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Modal Content Styles */
+.login-modal__contents {
+  background-color: var(--bg-light);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Content Styles when Modal is Open */
+.login-modal.open .login-modal__contents {
+  transform: translateY(0);
+}
+
+/* Modal Header Styles */
+.login-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Modal Title Styles */
+.login-modal__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* Modal Close Button Styles */
+.login-modal__close {
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Modal Close Icon Styles */
+.login-modal__close-icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+/* Modal Close Icon Lines Styles */
+.login-modal__close-icon::before,
+.login-modal__close-icon::after {
+  background-color: var(--text-dark);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Modal Close Icon Lines Rotation Styles */
+.login-modal__close-icon::before {
+  transform: rotate(45deg);
+}
+
+.login-modal__close-icon::after {
+  transform: rotate(-45deg);
+}
+
+/* Modal Close Icon Lines Hover Styles */
+.login-modal__close:hover .login-modal__close-icon::before,
+.login-modal__close:hover .login-modal__close-icon::after {
+  background-color: var(--button-hover);
+}
+
+/* Modal Form Styles */
+.login-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Modal Input Group Styles */
+.login-modal__input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Modal Label Styles */
+.login-modal__label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+/* Modal Input Styles */
+.login-modal__input {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e1e1e1;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+/* Modal Input Focus Styles */
+.login-modal__input:focus {
+  outline: none;
+  border-color: var(--primary-pastel);
+}
+
+/* Modal Submit Button Styles */
+.login-modal__submit {
+  margin-top: 1rem;
+  padding: 0.875rem;
+  background-color: var(--primary-pastel);
+  color: var(--color-white);
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Modal Submit Button Hover Styles */
+.login-modal__submit:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-2px);
+}
+
+/* Modal Footer Styles */
+.login-modal__footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+/* Modal Link Styles */
+.login-modal__link {
+  color: var(--primary-pastel);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Modal Link Hover Styles */
+.login-modal__link:hover {
+  color: var(--button-hover);
+}
+
+/* Accessibility Styles for Focus Visible */
+.login-modal__close:focus-visible,
+.login-modal__input:focus-visible,
+.login-modal__submit:focus-visible,
+.login-modal__link:focus-visible {
+  outline: 3px solid var(--primary-pastel);
+  outline-offset: 2px;
+}
+
+/* Animation for Form Elements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation Delay for Input Groups */
+.login-modal__input-group {
+  animation: fadeInUp 0.3s ease-out forwards;
+  opacity: 0;
+}
+
+.login-modal__input-group:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.login-modal__input-group:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 480px) {
+  .login-modal__contents {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .login-modal__title {
+    font-size: 1.25rem;
+  }
+}

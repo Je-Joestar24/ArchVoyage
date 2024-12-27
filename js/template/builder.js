@@ -29,6 +29,7 @@ export default class {
             ${this.getFooter()}
             ${this.getMessage()}
             ${this.getArcsModal()}
+            ${this.getLoginModal()}
         `;
     }
 
@@ -71,6 +72,16 @@ export default class {
     getArcsModal(){
         return `
             <div id="arcs-modal" class=""></div>
+        `;
+    }
+
+    /**
+     * Generates the HTML content for the Login modal.
+     * @returns {string} The HTML content for the Login modal.
+     */
+    getLoginModal(){
+        return `
+            <div id="login-modal" class="login-modal" data-auths-login></div>
         `;
     }
 }
