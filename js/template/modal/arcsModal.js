@@ -1,5 +1,5 @@
-import { mutations } from "../util/state.js";
-import HtmlGenerator from "./modal/htmlGenerator.js";
+import { mutations } from "../../util/state.js";
+import HtmlGenerator from "./arcsModal/htmlGenerator.js";
 /**
  * Arc Modal Class
  * Handles displaying detailed arc information in a modal dialog.

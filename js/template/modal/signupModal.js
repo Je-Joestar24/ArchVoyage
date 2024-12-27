@@ -1,4 +1,3 @@
-import { mutations } from "../util/state.js";
 import HtmlGenerator from "./signupModal/htmlGenerator.js";
 /**
  * Signup Modal Class

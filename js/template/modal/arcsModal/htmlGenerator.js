@@ -1,4 +1,4 @@
-import { getters } from "../../util/state.js";
+import { getters } from "../../../util/state.js";
 
 /**
  * HtmlGenerator class is responsible for generating the HTML content for the modal.

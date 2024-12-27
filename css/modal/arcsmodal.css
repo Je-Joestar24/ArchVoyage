@@ -1,13 +1,13 @@
-@import "./componenets/body.css";
-@import "./componenets/characters.css";
-@import "./componenets/close.css";
-@import "./componenets/events.css";
-@import "./componenets/header.css";
-@import "./componenets/img.css";
-@import "./componenets/info.css";
-@import "./componenets/maincontent.css";
-@import "./componenets/responsive.css";
-@import "./componenets/sidebar.css";
+@import "./arcsComponents/body.css";
+@import "./arcsComponents/characters.css";
+@import "./arcsComponents/close.css";
+@import "./arcsComponents/events.css";
+@import "./arcsComponents/header.css";
+@import "./arcsComponents/img.css";
+@import "./arcsComponents/info.css";
+@import "./arcsComponents/maincontent.css";
+@import "./arcsComponents/responsive.css";
+@import "./arcsComponents/sidebar.css";
 
 /* Modal overlay */
 #arcs-modal {
