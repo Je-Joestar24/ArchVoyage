@@ -72,7 +72,7 @@ export default class {
      */
     getArcsModal() {
         return `
-            <div id="arcs-modal" class=""></div>
+            <div id="arcs-modal" class="" data-arcs-toggle></div>
         `;
     }
 
@@ -91,7 +91,7 @@ export default class {
      */
     getSignupModal() {
         return `
-            <div id="signup-modal" class="signup-modal"></div>
+            <div id="signup-modal" class="signup-modal" data-auths-signup></div>
         `;
     }
 }
