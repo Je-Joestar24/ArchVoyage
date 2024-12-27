@@ -1,0 +1,18 @@
+/* Modal Submit Button Styles */
+.login-modal__submit {
+  margin-top: 1rem;
+  padding: 0.875rem;
+  background-color: var(--primary-pastel);
+  color: var(--color-white);
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Modal Submit Button Hover Styles */
+.login-modal__submit:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-2px);
+}

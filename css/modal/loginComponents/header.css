@@ -1,0 +1,14 @@
+/* Modal Header Styles */
+.login-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Modal Title Styles */
+.login-modal__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}

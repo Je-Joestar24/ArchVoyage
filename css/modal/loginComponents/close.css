@@ -1,0 +1,47 @@
+/* Modal Close Button Styles */
+.login-modal__close {
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Modal Close Icon Styles */
+.login-modal__close-icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+/* Modal Close Icon Lines Styles */
+.login-modal__close-icon::before,
+.login-modal__close-icon::after {
+  background-color: var(--text-dark);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Modal Close Icon Lines Rotation Styles */
+.login-modal__close-icon::before {
+  transform: rotate(45deg);
+}
+
+.login-modal__close-icon::after {
+  transform: rotate(-45deg);
+}
+
+/* Modal Close Icon Lines Hover Styles */
+.login-modal__close:hover .login-modal__close-icon::before,
+.login-modal__close:hover .login-modal__close-icon::after {
+  background-color: var(--button-hover);
+}
