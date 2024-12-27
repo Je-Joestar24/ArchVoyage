@@ -29,6 +29,7 @@ export default class {
             ${this.getFooter()}
             ${this.getMessage()}
             ${this.getArcsModal()}
+            ${this.getSignupModal()}
         `;
     }
 
@@ -71,6 +72,17 @@ export default class {
     getArcsModal(){
         return `
             <div id="arcs-modal" class=""></div>
+        `;
+    }
+
+    
+    /**
+     * Generates the HTML content for the Arcs modal.
+     * @returns {string} The HTML content for the Arcs modal.
+     */
+    getSignupModal(){
+        return `
+            <div id="signup-modal" class="signup-modal"></div>
         `;
     }
 }
